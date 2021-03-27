@@ -20,7 +20,7 @@ def transcript():
     
 @app.route('/summary')
 def summary():
-  summar = "more than half of all deaths in the United States are caused by cardiovascular disease disorders of the heart and blood vessels a stroke The Passage through which blood clocks May rupture and cause blood clots to form or fragments of the ruptured plug maybe become lodged engine do arteries"
+  summar = run_summarization(trans)
   return render_template('summary.html', summary=summar)
 
 @app.route('/translation')
